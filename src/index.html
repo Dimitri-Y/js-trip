@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=McLaren&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>FLY URZICKSTAN</title>
+  </head>
+  <body>
+    <header>
+      <!-- Header і навігація тут -->
+      <div class="navigation-buttons">
+        <a href="#home" class="navigation-tab">Go to Home</a>
+        <a href="#about-us" class="navigation-tab">Go to About Us</a>
+        <a href="#shop" class="navigation-tab">Go to Shop</a>
+        <a href="#check-in" class="navigation-tab">Go to Check-In</a>
+        <a href="#contact" class="navigation-tab">Go to Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Головна секція -->
+      <section id="home" class="home">
+        <h1 class="title">FLY URZICKSTAN</h1>
+        <p class="home-text">
+          We hope you'll enjoy fly urzickstan airlines and please dont die after
+          another terract
+        </p>
+        <button class="button-buy_tickets">BUY TICKETS</button>
+      </section>
+
+      <!-- Секція "Про нас" -->
+      <section id="about-us" class="about-us">
+        <h2 class="title">About Us</h2>
+        <img
+          class="about-us-img"
+          src="an_12.jpg"
+          alt="An-12"
+          width="200"
+          height="100"
+        />
+        <p class="about-us-text">
+          Our airlines have been operating since 1964 after the hijacking of 12
+          An-2 aircraft from the USSR for the needs of the Urzykstan Workers'
+          Party. From now on, we are the leading carrier in the Central Asia
+          region.
+        </p>
+        <img src="stuardess.jpg" alt="Stuardess" width="200" height="100" />
+        <p class="about-us-text">
+          We can guarantee you that in 67% of flights you will reach your
+          destination in comfort, pleasant staff and professional pilots. In the
+          remaining 33%, prepare to become great martyrs of the people of
+          Urzykstan.
+        </p>
+        <a href="story.html" class="button-read_more">Read more</a>
+      </section>
+
+      <!-- Секція "Магазин" -->
+      <section id="shop">
+        <h2 class="title">Shop</h2>
+
+        <details class="shop-details shop-details_1">
+          <summary class="shop-details_text">Buy a ticket on airline</summary>
+          <div class="ticket-booking">
+            <form action="/search-flights" method="get">
+              <label for="departure">Departure</label>
+              <input
+                type="text"
+                id="departure"
+                name="departure"
+                placeholder="Departure"
+              />
+
+              <label for="arrival">Arrival</label>
+              <input
+                type="text"
+                id="arrival"
+                name="arrival"
+                placeholder="Arrival"
+              />
+
+              <label for="date">Date</label>
+              <input type="date" id="date" name="date" />
+
+              <label for="class">Class</label>
+              <select id="class" name="class">
+                <option value="economy">1 cl</option>
+                <option value="business">2 cl</option>
+              </select>
+
+              <button type="submit">Search now</button>
+            </form>
+          </div>
+        </details>
+
+        <details class="shop-details shop-details_2">
+          <summary class="shop-details_text">Souvenirs</summary>
+          <div class="souvenirs">
+            <div class="souvenir-item">
+              <img
+                src="path-to-saddam-hussein-image.jpg"
+                alt="Saadam Hussein"
+              />
+              <h3>Saadam Hussein</h3>
+              <p class="price">999</p>
+              <button type="button">Add to Cart</button>
+            </div>
+            <div class="souvenir-item">
+              <img src="path-to-ashot-kukla-image.jpg" alt="Ashot Kukla" />
+              <h3>"Ashot" Kukla</h3>
+              <p class="price">999</p>
+              <button type="button">Add to Cart</button>
+            </div>
+            <div class="souvenir-item">
+              <img src="path-to-ak-12-image.jpg" alt="Ak-12 obr. 1985" />
+              <h3>Ak-12 obr. 1985</h3>
+              <p class="price">999</p>
+              <button type="button">Add to Cart</button>
+            </div>
+          </div>
+        </details>
+
+        <details class="shop-details shop-details_3">
+          <summary class="shop-details_text">Rent a business jet</summary>
+          <div class="rental-info">
+            <p>
+              Wanna try a new experience? We have something for you! Fly on
+              Antonov An-72 with extra comfort and safety (yes, we stole it from
+              UN).
+            </p>
+            <img src="path-to-business-jet-image.jpg" alt="Business Jet" />
+            <button type="button" onclick="location.href='rental-form.html';">
+              Try now!
+            </button>
+          </div>
+        </details>
+      </section>
+
+      <!-- Секція "Реєстрація" -->
+      <section id="check-in" class="check-in">
+        <h2 class="title">Check-in</h2>
+        <div class="check-in-methods">
+          <button onclick="location.href='login.html';" class="check-in-button">
+            Sign in account
+          </button>
+          <button
+            onclick="location.href='booking.html';"
+            class="check-in-button"
+          >
+            Booking details
+          </button>
+        </div>
+      </section>
+
+      <!-- Секція "Контакти" -->
+      <section id="contact" class="contact">
+        <h2 class="title contact-title">Contact</h2>
+        <ul class="contact-list">
+          <li class="contact-list-el">Email: Urzickstan_fly@gmail.com</li>
+          <li class="contact-list-el">Phone: +123 456 7890</li>
+          <li class="contact-list-el">Address: Urzikstan Fly Office</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-branding">
+        <img
+          src="path-to-your-logo.svg"
+          alt="FLY URZICKSTAN Logo"
+          class="footer-logo"
+        />
+        <h2 class="footer-title">FLY URZICKSTAN</h2>
+        <div class="footer-contacts">
+          <p>
+            <a href="mailto:Urzickstan_fly@gmail.com" class="footer-contact"
+              >Urzickstan_fly@gmail.com</a
+            >
+          </p>
+          <p>
+            <a href="tel:+890-xxx-xx-xx" class="footer-contact">+890-xxx-xx-xx</a>
+          </p>
+        </div>  
+      </div>
+      <ul class="footer-links-list">
+        <li class="footer-links-list-el">
+          <a href="#home" class="footer-link">Home</a>
+        </li>
+        <li>
+          <a href="#shop" class="footer-link">Shop</a>
+        </li>
+        <li>
+        <a href="#about" class="footer-link">About us</a>
+        </li>
+        <li>
+        <a href="#contact" class="footer-link">Contact</a>
+        </li>
+        <li>
+        <a href="#check-in" class="footer-link">Check-in</a>
+        </li>
+      </div>
+      <div class="footer-socials">
+        <a
+          href="https://maps.google.com/?q=Your+Business+Location"
+          class="social-icon"
+          >Google Maps</a
+        >
+        <a href="https://t.me/YourTelegram" class="social-icon">Telegram</a>
+      </div>
+    </footer>
+  </body>
+</html>
