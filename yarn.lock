@@ -1392,7 +1392,7 @@ parcel-reporter-clean-dist@^1.0.4:
     "@parcel/plugin" "^2.0.0"
     fast-glob "^3.2.7"
 
-parcel@^2.0.0, parcel@^2.6.0:
+parcel@^2.0.0, parcel@^2.10.3:
   version "2.10.3"
   resolved "https://registry.npmjs.org/parcel/-/parcel-2.10.3.tgz"
   integrity sha512-Ocx33N4ZVnotJTALhMZ0AqPIE9UN5uP6jjA+lYJ4FlEYuYYZsvOQXZQgeMa62pFj6jrOHWh7ho8uJhRdTNwVyg==
