@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=McLaren&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=McLaren&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -18,205 +21,442 @@
   </head>
   <body>
     <header>
-      <!-- Header і навігація тут -->
-      <div class="navigation-buttons">
-        <a href="#home" class="navigation-tab">Go to Home</a>
-        <a href="#about-us" class="navigation-tab">Go to About Us</a>
-        <a href="#shop" class="navigation-tab">Go to Shop</a>
-        <a href="#check-in" class="navigation-tab">Go to Check-In</a>
-        <a href="#contact" class="navigation-tab">Go to Contact</a>
+      <div class="container header">
+        <!-- Header і навігація тут -->
+        <svg class="header_logo">
+          <use href="../assets/svg/symbol-defs(1).svg#icon-ic_logo"></use>
+        </svg>
+        <ul class="navigation-buttons-list">
+          <li class="navigation-buttons-list-el">
+            <a href="#home" class="navigation-tab">Home</a>
+          </li>
+          <li class="navigation-buttons-list-el">
+            <a href="#about-us" class="navigation-tab">About Us</a>
+          </li>
+          <li class="navigation-buttons-list-el">
+            <a href="#shop" class="navigation-tab">Shop</a>
+          </li>
+          <li class="navigation-buttons-list-el">
+            <a href="#check-in" class="navigation-tab">Check-In</a>
+          </li>
+          <li class="navigation-buttons-list-el">
+            <a href="#contact" class="navigation-tab">Contact</a>
+          </li>
+        </ul>
       </div>
     </header>
 
     <main>
       <!-- Головна секція -->
       <section id="home" class="home">
-        <h1 class="title">FLY URZICKSTAN</h1>
-        <p class="home-text">
-          We hope you'll enjoy fly urzickstan airlines and please dont die after
-          another terract
-        </p>
-        <button class="button-buy_tickets">BUY TICKETS</button>
+        <div class="container">
+          <h1 class="title home-title">FLY URZICKSTAN</h1>
+          <p class="home-text">
+            We hope you'll enjoy fly urzickstan airlines and please dont die
+            after another terract
+          </p>
+          <button class="button-buy_tickets">BUY TICKETS</button>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1440"
+          height="508"
+          viewBox="0 0 1440 508"
+          fill="#00356a"
+          style="margin-top: -10px"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M0 0L26.4 50.8C52.8 101.6 106.8 203.2 159.6 237.067C213.6 270.933 266.4 237.067 320.4 262.467C373.2 287.867 427.2 372.533 480 397.933C532.8 423.333 586.8 389.467 639.6 389.467C693.6 389.467 746.4 423.333 800.4 406.4C853.2 389.467 907.2 321.733 960 330.2C1012.8 338.667 1066.8 423.333 1119.6 440.267C1173.6 457.2 1226.4 406.4 1280.4 364.067C1333.2 321.733 1387.2 287.867 1413.6 270.933L1440 254V508H1413.6C1387.2 508 1333.2 508 1280.4 508C1226.4 508 1173.6 508 1119.6 508C1066.8 508 1012.8 508 960 508C907.2 508 853.2 508 800.4 508C746.4 508 693.6 508 639.6 508C586.8 508 532.8 508 480 508C427.2 508 373.2 508 320.4 508C266.4 508 213.6 508 159.6 508C106.8 508 52.8 508 26.4 508H0V0Z"
+            fill="#3286AA"
+          />
+        </svg>
       </section>
 
       <!-- Секція "Про нас" -->
       <section id="about-us" class="about-us">
-        <h2 class="title">About Us</h2>
-        <img
-          class="about-us-img"
-          src="an_12.jpg"
-          alt="An-12"
-          width="200"
-          height="100"
-        />
-        <p class="about-us-text">
-          Our airlines have been operating since 1964 after the hijacking of 12
-          An-2 aircraft from the USSR for the needs of the Urzykstan Workers'
-          Party. From now on, we are the leading carrier in the Central Asia
-          region.
-        </p>
-        <img src="stuardess.jpg" alt="Stuardess" width="200" height="100" />
-        <p class="about-us-text">
-          We can guarantee you that in 67% of flights you will reach your
-          destination in comfort, pleasant staff and professional pilots. In the
-          remaining 33%, prepare to become great martyrs of the people of
-          Urzykstan.
-        </p>
-        <a href="story.html" class="button-read_more">Read more</a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1439"
+          height="302"
+          viewBox="0 0 1439 302"
+          fill="none"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M1439 173L1405 151C1370 130 1302 86 1233 58C1165 29 1096 14 1028 22C959 29 890 58 822 79C753 101 685 115 616 115C548 115 479 101 410 122C342 144 273 202 205 238C136 274 68 288 33 295L-1 302V0H33C68 0 136 0 205 0C273 0 342 0 410 0C479 0 548 0 616 0C685 0 753 0 822 0C890 0 959 0 1028 0C1096 0 1165 0 1233 0C1302 0 1370 0 1405 0H1439V173Z"
+            fill="#3286AA"
+          />
+        </svg>
+        <div class="container">
+          <h2 class="title">About Us</h2>
+          <ul class="about-us-list">
+            <li class="about-us-list-el">
+              <p class="about-us-text">
+                Our airlines have been operating since 1964 after the hijacking
+                of 12 An-2 aircraft from the USSR for the needs of the Urzykstan
+                Workers' Party. From now on, we are the leading carrier in the
+                Central Asia region.
+              </p>
+              <img
+                class="about-us-img"
+                src="../assets/images/an_12.png"
+                alt="An-12"
+                width="200"
+                height="100"
+                class="about-us-img"
+              />
+            </li>
+            <li class="about-us-list-el">
+              <img
+                src="../assets/images/stuardess.png"
+                alt="Stuardess"
+                width="200"
+                height="100"
+                class="about-us-img"
+              />
+              <p class="about-us-text">
+                We can guarantee you that in 67% of flights you will reach your
+                destination in comfort, pleasant staff and professional pilots.
+                In the remaining 33%, prepare to become great martyrs of the
+                people of Urzykstan.
+              </p>
+            </li>
+          </ul>
+          <div class="about-us-read_more">
+            <p class="read_more-text">
+              Read about Urzykstan Fly backstory here!
+            </p>
+            <a href="story.html" class="button-read_more">Read more</a>
+          </div>
+        </div>
       </section>
 
       <!-- Секція "Магазин" -->
-      <section id="shop">
-        <h2 class="title">Shop</h2>
+      <section id="shop" class="shop">
+        <div class="container">
+          <h2 class="title">Shop</h2>
+          <details class="shop-details shop-details_1">
+            <summary class="shop-details_text">Buy a ticket on airline</summary>
+            <div class="ticket-booking">
+              <p class="ticket-booking-title">Buy a ticket on airlane</p>
+              <form
+                action="/search-flights"
+                method="get"
+                class="ticket-booking-form"
+              >
+                <div style="display: flex">
+                  <input
+                    type="text"
+                    id="departure"
+                    name="departure"
+                    placeholder="Departure"
+                    class="ticket-booking-input"
+                  />
+                  <input
+                    type="text"
+                    id="arrival"
+                    name="arrival"
+                    placeholder="Arrival"
+                    class="ticket-booking-input"
+                  />
+                  <div class="toggle-switch">
+                    <input type="checkbox" id="toggleBtn" />
+                    <label class="toggle-label" for="toggleBtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="10" />
+                      </svg>
+                      Кнопка 1
+                    </label>
+                    <label class="toggle-label" for="toggleBtn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <rect
+                          x="4"
+                          y="4"
+                          width="16"
+                          height="16"
+                          rx="2"
+                          ry="2"
+                        />
+                      </svg>
+                      Кнопка 2
+                    </label>
+                  </div>
+                </div>
+                <input
+                  type="date"
+                  id="date"
+                  name="date"
+                  class="ticket-booking-input-date"
+                />
 
-        <details class="shop-details shop-details_1">
-          <summary class="shop-details_text">Buy a ticket on airline</summary>
-          <div class="ticket-booking">
-            <form action="/search-flights" method="get">
-              <label for="departure">Departure</label>
-              <input
-                type="text"
-                id="departure"
-                name="departure"
-                placeholder="Departure"
-              />
+                <!-- <label for="class">Class</label> -->
+                <select id="class" name="class" class="ticket-booking-select">
+                  <option value="economy">1 cl</option>
+                  <option value="business">2 cl</option>
+                </select>
 
-              <label for="arrival">Arrival</label>
-              <input
-                type="text"
-                id="arrival"
-                name="arrival"
-                placeholder="Arrival"
-              />
-
-              <label for="date">Date</label>
-              <input type="date" id="date" name="date" />
-
-              <label for="class">Class</label>
-              <select id="class" name="class">
-                <option value="economy">1 cl</option>
-                <option value="business">2 cl</option>
-              </select>
-
-              <button type="submit">Search now</button>
-            </form>
-          </div>
-        </details>
-
-        <details class="shop-details shop-details_2">
-          <summary class="shop-details_text">Souvenirs</summary>
-          <div class="souvenirs">
-            <div class="souvenir-item">
-              <img
-                src="path-to-saddam-hussein-image.jpg"
-                alt="Saadam Hussein"
-              />
-              <h3>Saadam Hussein</h3>
-              <p class="price">999</p>
-              <button type="button">Add to Cart</button>
+                <button type="submit" class="button-search_now">
+                  Search now
+                </button>
+              </form>
             </div>
-            <div class="souvenir-item">
-              <img src="path-to-ashot-kukla-image.jpg" alt="Ashot Kukla" />
-              <h3>"Ashot" Kukla</h3>
-              <p class="price">999</p>
-              <button type="button">Add to Cart</button>
+          </details>
+          <details class="shop-details shop-details_2">
+            <summary class="shop-details_text">Souvenirs</summary>
+            <div class="souvenirs">
+              <h3 class="souvenirs-title">Souvenirs</h3>
+              <ul class="souvenirs-list">
+                <li class="souvenirs-list-el">
+                  <div class="souvenir-item">
+                    <img
+                      src="../assets/images/souvenir_1.png"
+                      alt="Saadam Hussein"
+                      class="souvenir-item-img"
+                    />
+                    <h4 class="souvenir-item-title">Saadam Hussein</h4>
+                    <p class="souvenir-item-price">1000<span>999</span></p>
+                  </div>
+                </li>
+                <li class="souvenirs-list-el">
+                  <div class="souvenir-item">
+                    <img
+                      src="../assets/images/souvenir_2.png"
+                      alt="Ashot Kukla"
+                      class="souvenir-item-img"
+                    />
+                    <h4 class="souvenir-item-title">"Ashot" Kukla</h4>
+                    <p class="souvenir-item-price">1000<span>999</span></p>
+                  </div>
+                </li>
+                <li class="souvenirs-list-el">
+                  <div class="souvenir-item">
+                    <img
+                      src="../assets/images/souvenir_3.png"
+                      alt="Ak-12 obr. 1985"
+                      class="souvenir-item-img"
+                    />
+                    <h4 class="souvenir-item-title">Ak-12 obr. 1985</h4>
+                    <p class="souvenir-item-price">1000<span>999</span></p>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div class="souvenir-item">
-              <img src="path-to-ak-12-image.jpg" alt="Ak-12 obr. 1985" />
-              <h3>Ak-12 obr. 1985</h3>
-              <p class="price">999</p>
-              <button type="button">Add to Cart</button>
+          </details>
+          <details class="shop-details shop-details_3">
+            <summary class="shop-details_text">Rent a business jet</summary>
+            <div class="rental-info">
+              <h3 class="rental-info-title">Rent a businessjet</h3>
+              <div style="display: flex">
+                <img
+                  src="../assets/images/image 5.png"
+                  alt="Business Jet"
+                  class="rental-info-img"
+                />
+                <div class="rental-info-block">
+                  <p class="rental-info-text">
+                    Wanna try a new experience? We have something for you! Fly
+                    on Antonov An-72 with extra comfort and safety (yes, we
+                    stole it from UN).
+                  </p>
+                  <button
+                    type="button"
+                    onclick="location.href='rental-form.html';"
+                    class="button-rental_try"
+                  >
+                    Try now!
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-        </details>
-
-        <details class="shop-details shop-details_3">
-          <summary class="shop-details_text">Rent a business jet</summary>
-          <div class="rental-info">
-            <p>
-              Wanna try a new experience? We have something for you! Fly on
-              Antonov An-72 with extra comfort and safety (yes, we stole it from
-              UN).
-            </p>
-            <img src="path-to-business-jet-image.jpg" alt="Business Jet" />
-            <button type="button" onclick="location.href='rental-form.html';">
-              Try now!
-            </button>
-          </div>
-        </details>
+          </details>
+        </div>
       </section>
 
       <!-- Секція "Реєстрація" -->
       <section id="check-in" class="check-in">
-        <h2 class="title">Check-in</h2>
-        <div class="check-in-methods">
-          <button onclick="location.href='login.html';" class="check-in-button">
-            Sign in account
-          </button>
-          <button
-            onclick="location.href='booking.html';"
-            class="check-in-button"
-          >
-            Booking details
-          </button>
+        <div class="container">
+          <h2 class="title">Check-in</h2>
+          <div class="check-in-methods">
+            <p class="check-in-text">
+              You can check in any time from 30 hours before your flight's
+              departure. Please select how you would like to check in.
+            </p>
+            <button
+              onclick="location.href='login.html';"
+              class="check-in-button"
+            >
+              Sign in account
+              <svg class="check-in-button-icon">
+                <use href="../assets/svg/symbol-defs(1).svg#icon-ic_user"></use>
+              </svg>
+            </button>
+            <button
+              onclick="location.href='booking.html';"
+              class="check-in-button"
+            >
+              Booking details
+              <svg class="check-in-button-icon">
+                <use
+                  href="../assets/svg/symbol-defs(1).svg#icon-icon_outline_ticket"
+                ></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
-
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="100%"
+        height="326"
+        fill="none"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0 0L80.4 46.8657C159.6 102.487 320.4 213.728 480 250.809C639.6 287.889 800.4 250.809 960 238.449C1119.6 226.088 1280.4 238.449 1359.6 244.629L1440 250.809V324.97H1359.6C1280.4 324.97 1119.6 324.97 960 324.97C800.4 324.97 639.6 324.97 480 324.97C320.4 324.97 159.6 324.97 80.4 324.97L0 326V0Z"
+          fill="#3286AA"
+        />
+      </svg>
       <!-- Секція "Контакти" -->
       <section id="contact" class="contact">
-        <h2 class="title contact-title">Contact</h2>
-        <ul class="contact-list">
-          <li class="contact-list-el">Email: Urzickstan_fly@gmail.com</li>
-          <li class="contact-list-el">Phone: +123 456 7890</li>
-          <li class="contact-list-el">Address: Urzikstan Fly Office</li>
-        </ul>
+        <div class="container">
+          <h2 class="title contact-title">Contact</h2>
+          <ul class="contact-list">
+            <li class="contact-list-el">
+              <svg class="contact-list-icon">
+                <use
+                  href="../assets/svg/symbol-defs(1).svg#icon-ic_email"
+                ></use>
+              </svg>
+              <a href="mailto:Urzickstan_fly@gmail.com"
+                >Urzickstan_fly@gmail.com</a
+              >
+            </li>
+            <li class="contact-list-el">
+              <svg class="contact-list-icon">
+                <use
+                  href="../assets/svg/symbol-defs(1).svg#icon-ic_mobile"
+                ></use>
+              </svg>
+              <a href="tel:+890-xxx-xx-xx">+890-xxx-xx-xx</a>
+            </li>
+            <li class="contact-list-el">
+              <svg class="contact-list-icon">
+                <use
+                  href="../assets/svg/symbol-defs(1).svg#icon-ic_facebook"
+                ></use>
+              </svg>
+              Urzikstan Fly
+            </li>
+            <li class="contact-list-el">
+              <svg class="contact-list-icon">
+                <use
+                  href="../assets/svg/symbol-defs(1).svg#icon-ic_googlemaps"
+                ></use>
+              </svg>
+              <a href="https://maps.google.com/?q=Your+Business+Location"
+                >Urzikstan Fly Office</a
+              >
+            </li>
+            <li class="contact-list-el">
+              <svg class="contact-list-icon">
+                <use
+                  href="../assets/svg/symbol-defs(1).svg#icon-ic_telegram"
+                ></use>
+              </svg>
+              <a href="https://t.me/YourTelegram">Real_Urzikstan_Fly</a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-
     <footer>
-      <div class="footer-branding">
-        <img
-          src="path-to-your-logo.svg"
-          alt="FLY URZICKSTAN Logo"
-          class="footer-logo"
-        />
-        <h2 class="footer-title">FLY URZICKSTAN</h2>
-        <div class="footer-contacts">
-          <p>
-            <a href="mailto:Urzickstan_fly@gmail.com" class="footer-contact"
+      <div class="footer-container">
+        <div class="footer-block">
+          <h2 class="footer-title">FLY URZICKSTAN</h2>
+          <svg class="footer_logo">
+            <use href="../assets/svg/symbol-defs(1).svg#icon-ic_logo"></use>
+          </svg>
+        </div>
+        <ul class="footer-contacts-list">
+          <li class="footer-contacts-el">
+            <svg class="footer-contact-list-icon">
+              <use href="../assets/svg/symbol-defs(1).svg#icon-ic_email"></use>
+            </svg>
+            <a href="mailto:Urzickstan_fly@gmail.com"
               >Urzickstan_fly@gmail.com</a
             >
-          </p>
-          <p>
-            <a href="tel:+890-xxx-xx-xx" class="footer-contact">+890-xxx-xx-xx</a>
-          </p>
-        </div>  
+          </li>
+          <li class="footer-contacts-el">
+            <svg class="footer-contact-list-icon">
+              <use href="../assets/svg/symbol-defs(1).svg#icon-ic_mobile"></use>
+            </svg>
+            <a href="tel:+890-xxx-xx-xx">+890-xxx-xx-xx</a>
+          </li>
+          <li class="footer-contacts-el">
+            <svg class="footer-contact-list-icon">
+              <use
+                href="../assets/svg/symbol-defs(1).svg#icon-ic_facebook"
+              ></use>
+            </svg>
+            Urzikstan Fly
+          </li>
+          <li class="footer-contacts-el">
+            <svg class="footer-contact-list-icon">
+              <use
+                href="../assets/svg/symbol-defs(1).svg#icon-ic_googlemaps"
+              ></use>
+            </svg>
+            <a href="https://maps.google.com/?q=Your+Business+Location"
+              >Urzikstan Fly Office</a
+            >
+          </li>
+          <li class="footer-contacts-el">
+            <svg class="footer-contact-list-icon">
+              <use
+                href="../assets/svg/symbol-defs(1).svg#icon-ic_telegram"
+              ></use>
+            </svg>
+            <a href="https://t.me/YourTelegram">Real_Urzikstan_Fly</a>
+          </li>
+        </ul>
       </div>
       <ul class="footer-links-list">
         <li class="footer-links-list-el">
           <a href="#home" class="footer-link">Home</a>
         </li>
-        <li>
+        <li class="footer-links-list-el">
+          <a href="#contact" class="footer-link">Contact</a>
+        </li>
+        <li class="footer-links-list-el">
+          <a href="#about" class="footer-link">About us</a>
+        </li>
+        <li class="footer-links-list-el">
           <a href="#shop" class="footer-link">Shop</a>
         </li>
-        <li>
-        <a href="#about" class="footer-link">About us</a>
+        <li class="footer-links-list-el">
+          <a href="#check-in" class="footer-link">Check-in</a>
         </li>
-        <li>
-        <a href="#contact" class="footer-link">Contact</a>
-        </li>
-        <li>
-        <a href="#check-in" class="footer-link">Check-in</a>
-        </li>
-      </div>
-      <div class="footer-socials">
-        <a
-          href="https://maps.google.com/?q=Your+Business+Location"
-          class="social-icon"
-          >Google Maps</a
-        >
-        <a href="https://t.me/YourTelegram" class="social-icon">Telegram</a>
-      </div>
+      </ul>
     </footer>
   </body>
 </html>

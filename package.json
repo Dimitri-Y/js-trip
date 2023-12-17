@@ -2,10 +2,10 @@
   "name": "js-fly-trip",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Dimitri-Y.github.io/JS-fly-trip",
+  "homepage": "https://Dimitri-Y.github.io/js-trip",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /JS-fly-trip/"
+    "build": "parcel build src/*.html --public-url /js-trip/"
   },
   "repository": {
     "type": "git",
