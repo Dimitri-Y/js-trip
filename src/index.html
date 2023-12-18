@@ -50,46 +50,28 @@
       <!-- Головна секція -->
       <section id="home" class="home">
         <div class="container">
-          <h1 class="title home-title">FLY URZICKSTAN</h1>
-          <p class="home-text">
-            We hope you'll enjoy fly urzickstan airlines and please dont die
-            after another terract
-          </p>
-          <button class="button-buy_tickets">BUY TICKETS</button>
-        </div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="1440"
-          height="508"
-          viewBox="0 0 1440 508"
-          fill="#00356a"
-          style="margin-top: -10px"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M0 0L26.4 50.8C52.8 101.6 106.8 203.2 159.6 237.067C213.6 270.933 266.4 237.067 320.4 262.467C373.2 287.867 427.2 372.533 480 397.933C532.8 423.333 586.8 389.467 639.6 389.467C693.6 389.467 746.4 423.333 800.4 406.4C853.2 389.467 907.2 321.733 960 330.2C1012.8 338.667 1066.8 423.333 1119.6 440.267C1173.6 457.2 1226.4 406.4 1280.4 364.067C1333.2 321.733 1387.2 287.867 1413.6 270.933L1440 254V508H1413.6C1387.2 508 1333.2 508 1280.4 508C1226.4 508 1173.6 508 1119.6 508C1066.8 508 1012.8 508 960 508C907.2 508 853.2 508 800.4 508C746.4 508 693.6 508 639.6 508C586.8 508 532.8 508 480 508C427.2 508 373.2 508 320.4 508C266.4 508 213.6 508 159.6 508C106.8 508 52.8 508 26.4 508H0V0Z"
-            fill="#3286AA"
+          <div class="contact-container">
+            <div>
+              <h1 class="title home-title">FLY URZICKSTAN</h1>
+              <p class="home-text">
+                We hope you'll enjoy fly urzickstan airlines and please dont die
+                after another terract
+              </p>
+              <button class="button-buy_tickets">BUY TICKETS</button>
+            </div>
+          </div>
+          <img
+            src="../assets/images/plane_1.png"
+            alt="location Urzikstan Fly Office"
+            width="540"
+            height="520"
+            class="contact-img home-img"
           />
-        </svg>
+        </div>
       </section>
 
       <!-- Секція "Про нас" -->
       <section id="about-us" class="about-us">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="1439"
-          height="302"
-          viewBox="0 0 1439 302"
-          fill="none"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M1439 173L1405 151C1370 130 1302 86 1233 58C1165 29 1096 14 1028 22C959 29 890 58 822 79C753 101 685 115 616 115C548 115 479 101 410 122C342 144 273 202 205 238C136 274 68 288 33 295L-1 302V0H33C68 0 136 0 205 0C273 0 342 0 410 0C479 0 548 0 616 0C685 0 753 0 822 0C890 0 959 0 1028 0C1096 0 1165 0 1233 0C1302 0 1370 0 1405 0H1439V173Z"
-            fill="#3286AA"
-          />
-        </svg>
         <div class="container">
           <h2 class="title">About Us</h2>
           <ul class="about-us-list">
@@ -147,7 +129,7 @@
                 method="get"
                 class="ticket-booking-form"
               >
-                <div style="display: flex">
+                <div class="ticket-booking-blockline">
                   <input
                     type="text"
                     id="departure"
@@ -155,6 +137,11 @@
                     placeholder="Departure"
                     class="ticket-booking-input"
                   />
+                  <svg class="ticket-booking-icon_arrow_rotate">
+                    <use
+                      href="../assets/svg/symbol-defs(1).svg#icon-ic_arrow_rotate"
+                    ></use>
+                  </svg>
                   <input
                     type="text"
                     id="arrival"
@@ -162,42 +149,27 @@
                     placeholder="Arrival"
                     class="ticket-booking-input"
                   />
-                  <div class="toggle-switch">
-                    <input type="checkbox" id="toggleBtn" />
-                    <label class="toggle-label" for="toggleBtn">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <circle cx="12" cy="12" r="10" />
-                      </svg>
-                      Кнопка 1
-                    </label>
-                    <label class="toggle-label" for="toggleBtn">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <rect
-                          x="4"
-                          y="4"
-                          width="16"
-                          height="16"
-                          rx="2"
-                          ry="2"
-                        />
-                      </svg>
-                      Кнопка 2
+                  <div class="custom-toggle-switch">
+                    <input
+                      type="checkbox"
+                      id="toggle-switch-input"
+                      class="hidden-checkbox"
+                    />
+                    <label for="toggle-switch-input" class="switch-label">
+                      <div class="svg-container first-label">
+                        <svg>
+                          <use
+                            href="../assets/svg/symbol-defs(1).svg#icon-ic_arrow_right"
+                          ></use>
+                        </svg>
+                      </div>
+                      <div class="svg-container second-label">
+                        <svg>
+                          <use
+                            href="../assets/svg/symbol-defs(1).svg#icon-ic_arrow_swap"
+                          ></use>
+                        </svg>
+                      </div>
                     </label>
                   </div>
                 </div>
@@ -207,13 +179,17 @@
                   name="date"
                   class="ticket-booking-input-date"
                 />
-
-                <!-- <label for="class">Class</label> -->
-                <select id="class" name="class" class="ticket-booking-select">
-                  <option value="economy">1 cl</option>
-                  <option value="business">2 cl</option>
-                </select>
-
+                <div class="custom-toggle-switch-cl">
+                  <input
+                    type="checkbox"
+                    id="toggle-switch-input-cl"
+                    class="hidden-checkbox"
+                  />
+                  <label for="toggle-switch-input-cl" class="switch-label">
+                    <div class="svg-container first-label-cl">1cl</div>
+                    <div class="svg-container second-label-cl">2 cl</div>
+                  </label>
+                </div>
                 <button type="submit" class="button-search_now">
                   Search now
                 </button>
@@ -295,54 +271,119 @@
       <section id="check-in" class="check-in">
         <div class="container">
           <h2 class="title">Check-in</h2>
-          <div class="check-in-methods">
-            <p class="check-in-text">
-              You can check in any time from 30 hours before your flight's
-              departure. Please select how you would like to check in.
-            </p>
-            <button
-              onclick="location.href='login.html';"
-              class="check-in-button"
-            >
-              Sign in account
-              <svg class="check-in-button-icon">
-                <use href="../assets/svg/symbol-defs(1).svg#icon-ic_user"></use>
-              </svg>
-            </button>
-            <button
-              onclick="location.href='booking.html';"
-              class="check-in-button"
-            >
-              Booking details
-              <svg class="check-in-button-icon">
-                <use
-                  href="../assets/svg/symbol-defs(1).svg#icon-icon_outline_ticket"
-                ></use>
-              </svg>
-            </button>
+          <div class="contact-container">
+            <div class="check-in-methods">
+              <p class="check-in-text">
+                You can check in any time from 30 hours before your flight's
+                departure. Please select how you would like to check in.
+              </p>
+              <button
+                onclick="location.href='login.html';"
+                class="check-in-button"
+              >
+                Sign in account
+                <svg class="check-in-button-icon">
+                  <use
+                    href="../assets/svg/symbol-defs(1).svg#icon-ic_user"
+                  ></use>
+                </svg>
+              </button>
+              <button
+                onclick="location.href='booking.html';"
+                class="check-in-button"
+              >
+                Booking details
+                <svg class="check-in-button-icon">
+                  <use
+                    href="../assets/svg/symbol-defs(1).svg#icon-icon_outline_ticket"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+            <img
+              src="../assets/images/plane_2.png"
+              alt="location Urzikstan Fly Office"
+              width="540"
+              height="520"
+              class="contact-img"
+            />
           </div>
         </div>
       </section>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="100%"
-        height="326"
-        fill="none"
-      >
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M0 0L80.4 46.8657C159.6 102.487 320.4 213.728 480 250.809C639.6 287.889 800.4 250.809 960 238.449C1119.6 226.088 1280.4 238.449 1359.6 244.629L1440 250.809V324.97H1359.6C1280.4 324.97 1119.6 324.97 960 324.97C800.4 324.97 639.6 324.97 480 324.97C320.4 324.97 159.6 324.97 80.4 324.97L0 326V0Z"
-          fill="#3286AA"
-        />
-      </svg>
       <!-- Секція "Контакти" -->
       <section id="contact" class="contact">
         <div class="container">
           <h2 class="title contact-title">Contact</h2>
-          <ul class="contact-list">
-            <li class="contact-list-el">
-              <svg class="contact-list-icon">
+          <div class="contact-container">
+            <ul class="contact-list">
+              <li class="contact-list-el">
+                <svg class="contact-list-icon">
+                  <use
+                    href="../assets/svg/symbol-defs(1).svg#icon-ic_email"
+                  ></use>
+                </svg>
+                <a href="mailto:Urzickstan_fly@gmail.com"
+                  >Urzickstan_fly@gmail.com</a
+                >
+              </li>
+              <li class="contact-list-el">
+                <svg class="contact-list-icon">
+                  <use
+                    href="../assets/svg/symbol-defs(1).svg#icon-ic_mobile"
+                  ></use>
+                </svg>
+                <a href="tel:+890-xxx-xx-xx">+890-xxx-xx-xx</a>
+              </li>
+              <li class="contact-list-el">
+                <svg class="contact-list-icon">
+                  <use
+                    href="../assets/svg/symbol-defs(1).svg#icon-ic_facebook"
+                  ></use>
+                </svg>
+                Urzikstan Fly
+              </li>
+              <li class="contact-list-el">
+                <svg class="contact-list-icon">
+                  <use
+                    href="../assets/svg/symbol-defs(1).svg#icon-ic_googlemaps"
+                  ></use>
+                </svg>
+                <a href="https://maps.google.com/?q=Your+Business+Location"
+                  >Urzikstan Fly Office</a
+                >
+              </li>
+              <li class="contact-list-el">
+                <svg class="contact-list-icon">
+                  <use
+                    href="../assets/svg/symbol-defs(1).svg#icon-ic_telegram"
+                  ></use>
+                </svg>
+                <a href="https://t.me/YourTelegram">Real_Urzikstan_Fly</a>
+              </li>
+            </ul>
+            <img
+              src="../assets/images/image 1.png"
+              alt="location Urzikstan Fly Office"
+              width="540"
+              height="520"
+              class="contact-img"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div>
+          <div class="footer-block">
+            <h2 class="footer-title">FLY URZICKSTAN</h2>
+            <svg class="footer_logo">
+              <use href="../assets/svg/symbol-defs(1).svg#icon-ic_logo"></use>
+            </svg>
+          </div>
+          <ul class="footer-contacts-list">
+            <li class="footer-contacts-el">
+              <svg class="footer-contact-list-icon">
                 <use
                   href="../assets/svg/symbol-defs(1).svg#icon-ic_email"
                 ></use>
@@ -351,24 +392,24 @@
                 >Urzickstan_fly@gmail.com</a
               >
             </li>
-            <li class="contact-list-el">
-              <svg class="contact-list-icon">
+            <li class="footer-contacts-el">
+              <svg class="footer-contact-list-icon">
                 <use
                   href="../assets/svg/symbol-defs(1).svg#icon-ic_mobile"
                 ></use>
               </svg>
               <a href="tel:+890-xxx-xx-xx">+890-xxx-xx-xx</a>
             </li>
-            <li class="contact-list-el">
-              <svg class="contact-list-icon">
+            <li class="footer-contacts-el">
+              <svg class="footer-contact-list-icon">
                 <use
                   href="../assets/svg/symbol-defs(1).svg#icon-ic_facebook"
                 ></use>
               </svg>
               Urzikstan Fly
             </li>
-            <li class="contact-list-el">
-              <svg class="contact-list-icon">
+            <li class="footer-contacts-el">
+              <svg class="footer-contact-list-icon">
                 <use
                   href="../assets/svg/symbol-defs(1).svg#icon-ic_googlemaps"
                 ></use>
@@ -377,8 +418,8 @@
                 >Urzikstan Fly Office</a
               >
             </li>
-            <li class="contact-list-el">
-              <svg class="contact-list-icon">
+            <li class="footer-contacts-el">
+              <svg class="footer-contact-list-icon">
                 <use
                   href="../assets/svg/symbol-defs(1).svg#icon-ic_telegram"
                 ></use>
@@ -387,58 +428,6 @@
             </li>
           </ul>
         </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer-container">
-        <div class="footer-block">
-          <h2 class="footer-title">FLY URZICKSTAN</h2>
-          <svg class="footer_logo">
-            <use href="../assets/svg/symbol-defs(1).svg#icon-ic_logo"></use>
-          </svg>
-        </div>
-        <ul class="footer-contacts-list">
-          <li class="footer-contacts-el">
-            <svg class="footer-contact-list-icon">
-              <use href="../assets/svg/symbol-defs(1).svg#icon-ic_email"></use>
-            </svg>
-            <a href="mailto:Urzickstan_fly@gmail.com"
-              >Urzickstan_fly@gmail.com</a
-            >
-          </li>
-          <li class="footer-contacts-el">
-            <svg class="footer-contact-list-icon">
-              <use href="../assets/svg/symbol-defs(1).svg#icon-ic_mobile"></use>
-            </svg>
-            <a href="tel:+890-xxx-xx-xx">+890-xxx-xx-xx</a>
-          </li>
-          <li class="footer-contacts-el">
-            <svg class="footer-contact-list-icon">
-              <use
-                href="../assets/svg/symbol-defs(1).svg#icon-ic_facebook"
-              ></use>
-            </svg>
-            Urzikstan Fly
-          </li>
-          <li class="footer-contacts-el">
-            <svg class="footer-contact-list-icon">
-              <use
-                href="../assets/svg/symbol-defs(1).svg#icon-ic_googlemaps"
-              ></use>
-            </svg>
-            <a href="https://maps.google.com/?q=Your+Business+Location"
-              >Urzikstan Fly Office</a
-            >
-          </li>
-          <li class="footer-contacts-el">
-            <svg class="footer-contact-list-icon">
-              <use
-                href="../assets/svg/symbol-defs(1).svg#icon-ic_telegram"
-              ></use>
-            </svg>
-            <a href="https://t.me/YourTelegram">Real_Urzikstan_Fly</a>
-          </li>
-        </ul>
       </div>
       <ul class="footer-links-list">
         <li class="footer-links-list-el">
