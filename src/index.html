@@ -122,144 +122,150 @@
           <h2 class="title">Shop</h2>
           <details class="shop-details shop-details_1">
             <summary class="shop-details_text">Buy a ticket on airline</summary>
-            <div class="ticket-booking">
-              <p class="ticket-booking-title">Buy a ticket on airlane</p>
-              <form
-                action="/search-flights"
-                method="get"
-                class="ticket-booking-form"
-              >
-                <div class="ticket-booking-blockline">
+            <div class="details-content">
+              <div class="ticket-booking">
+                <p class="ticket-booking-title">Buy a ticket on airlane</p>
+                <form
+                  action="/search-flights"
+                  method="get"
+                  class="ticket-booking-form"
+                >
+                  <div class="ticket-booking-blockline">
+                    <input
+                      type="text"
+                      id="departure"
+                      name="departure"
+                      placeholder="Departure"
+                      class="ticket-booking-input"
+                    />
+                    <svg class="ticket-booking-icon_arrow_rotate">
+                      <use
+                        href="../assets/svg/symbol-defs(1).svg#icon-ic_arrow_rotate"
+                      ></use>
+                    </svg>
+                    <input
+                      type="text"
+                      id="arrival"
+                      name="arrival"
+                      placeholder="Arrival"
+                      class="ticket-booking-input"
+                    />
+                    <div class="custom-toggle-switch">
+                      <input
+                        type="checkbox"
+                        id="toggle-switch-input"
+                        class="hidden-checkbox"
+                      />
+                      <label for="toggle-switch-input" class="switch-label">
+                        <div class="svg-container first-label">
+                          <svg>
+                            <use
+                              href="../assets/svg/symbol-defs(1).svg#icon-ic_arrow_right"
+                            ></use>
+                          </svg>
+                        </div>
+                        <div class="svg-container second-label">
+                          <svg>
+                            <use
+                              href="../assets/svg/symbol-defs(1).svg#icon-ic_arrow_swap"
+                            ></use>
+                          </svg>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
                   <input
-                    type="text"
-                    id="departure"
-                    name="departure"
-                    placeholder="Departure"
-                    class="ticket-booking-input"
+                    type="date"
+                    id="date"
+                    name="date"
+                    class="ticket-booking-input-date"
                   />
-                  <svg class="ticket-booking-icon_arrow_rotate">
-                    <use
-                      href="../assets/svg/symbol-defs(1).svg#icon-ic_arrow_rotate"
-                    ></use>
-                  </svg>
-                  <input
-                    type="text"
-                    id="arrival"
-                    name="arrival"
-                    placeholder="Arrival"
-                    class="ticket-booking-input"
-                  />
-                  <div class="custom-toggle-switch">
+                  <div class="custom-toggle-switch-cl">
                     <input
                       type="checkbox"
-                      id="toggle-switch-input"
+                      id="toggle-switch-input-cl"
                       class="hidden-checkbox"
                     />
-                    <label for="toggle-switch-input" class="switch-label">
-                      <div class="svg-container first-label">
-                        <svg>
-                          <use
-                            href="../assets/svg/symbol-defs(1).svg#icon-ic_arrow_right"
-                          ></use>
-                        </svg>
-                      </div>
-                      <div class="svg-container second-label">
-                        <svg>
-                          <use
-                            href="../assets/svg/symbol-defs(1).svg#icon-ic_arrow_swap"
-                          ></use>
-                        </svg>
-                      </div>
+                    <label for="toggle-switch-input-cl" class="switch-label">
+                      <div class="svg-container first-label-cl">1cl</div>
+                      <div class="svg-container second-label-cl">2 cl</div>
                     </label>
                   </div>
-                </div>
-                <input
-                  type="date"
-                  id="date"
-                  name="date"
-                  class="ticket-booking-input-date"
-                />
-                <div class="custom-toggle-switch-cl">
-                  <input
-                    type="checkbox"
-                    id="toggle-switch-input-cl"
-                    class="hidden-checkbox"
-                  />
-                  <label for="toggle-switch-input-cl" class="switch-label">
-                    <div class="svg-container first-label-cl">1cl</div>
-                    <div class="svg-container second-label-cl">2 cl</div>
-                  </label>
-                </div>
-                <button type="submit" class="button-search_now">
-                  Search now
-                </button>
-              </form>
+                  <button type="submit" class="button-search_now">
+                    Search now
+                  </button>
+                </form>
+              </div>
             </div>
           </details>
           <details class="shop-details shop-details_2">
             <summary class="shop-details_text">Souvenirs</summary>
-            <div class="souvenirs">
-              <h3 class="souvenirs-title">Souvenirs</h3>
-              <ul class="souvenirs-list">
-                <li class="souvenirs-list-el">
-                  <div class="souvenir-item">
-                    <img
-                      src="../assets/images/souvenir_1.png"
-                      alt="Saadam Hussein"
-                      class="souvenir-item-img"
-                    />
-                    <h4 class="souvenir-item-title">Saadam Hussein</h4>
-                    <p class="souvenir-item-price">1000<span>999</span></p>
-                  </div>
-                </li>
-                <li class="souvenirs-list-el">
-                  <div class="souvenir-item">
-                    <img
-                      src="../assets/images/souvenir_2.png"
-                      alt="Ashot Kukla"
-                      class="souvenir-item-img"
-                    />
-                    <h4 class="souvenir-item-title">"Ashot" Kukla</h4>
-                    <p class="souvenir-item-price">1000<span>999</span></p>
-                  </div>
-                </li>
-                <li class="souvenirs-list-el">
-                  <div class="souvenir-item">
-                    <img
-                      src="../assets/images/souvenir_3.png"
-                      alt="Ak-12 obr. 1985"
-                      class="souvenir-item-img"
-                    />
-                    <h4 class="souvenir-item-title">Ak-12 obr. 1985</h4>
-                    <p class="souvenir-item-price">1000<span>999</span></p>
-                  </div>
-                </li>
-              </ul>
+            <div class="details-content">
+              <div class="souvenirs">
+                <h3 class="souvenirs-title">Souvenirs</h3>
+                <ul class="souvenirs-list">
+                  <li class="souvenirs-list-el">
+                    <div class="souvenir-item">
+                      <img
+                        src="../assets/images/souvenir_1.png"
+                        alt="Saadam Hussein"
+                        class="souvenir-item-img"
+                      />
+                      <h4 class="souvenir-item-title">Saadam Hussein</h4>
+                      <p class="souvenir-item-price"><span>1000</span>999</p>
+                    </div>
+                  </li>
+                  <li class="souvenirs-list-el">
+                    <div class="souvenir-item">
+                      <img
+                        src="../assets/images/souvenir_2.png"
+                        alt="Ashot Kukla"
+                        class="souvenir-item-img"
+                      />
+                      <h4 class="souvenir-item-title">"Ashot" Kukla</h4>
+                      <p class="souvenir-item-price"><span>1000</span>999</p>
+                    </div>
+                  </li>
+                  <li class="souvenirs-list-el">
+                    <div class="souvenir-item">
+                      <img
+                        src="../assets/images/souvenir_3.png"
+                        alt="Ak-12 obr. 1985"
+                        class="souvenir-item-img"
+                      />
+                      <h4 class="souvenir-item-title">Ak-12 obr. 1985</h4>
+                      <p class="souvenir-item-price"><span>1000</span>999</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </details>
           <details class="shop-details shop-details_3">
             <summary class="shop-details_text">Rent a business jet</summary>
-            <div class="rental-info">
-              <h3 class="rental-info-title">Rent a businessjet</h3>
-              <div style="display: flex">
-                <img
-                  src="../assets/images/image 5.png"
-                  alt="Business Jet"
-                  class="rental-info-img"
-                />
-                <div class="rental-info-block">
-                  <p class="rental-info-text">
-                    Wanna try a new experience? We have something for you! Fly
-                    on Antonov An-72 with extra comfort and safety (yes, we
-                    stole it from UN).
-                  </p>
-                  <button
-                    type="button"
-                    onclick="location.href='rental-form.html';"
-                    class="button-rental_try"
-                  >
-                    Try now!
-                  </button>
+            <div class="details-content">
+              <div class="rental-info">
+                <h3 class="rental-info-title">Rent a businessjet</h3>
+                <div style="display: flex">
+                  <img
+                    src="../assets/images/image 5.png"
+                    alt="Business Jet"
+                    class="rental-info-img"
+                  />
+                  <div class="rental-info-block">
+                    <p class="rental-info-text">
+                      Wanna try a new experience? We have something for you! Fly
+                      on Antonov An-72 with extra comfort and safety (yes, we
+                      stole it from UN).
+                    </p>
+                    <button
+                      type="button"
+                      onclick="location.href='rental-form.html';"
+                      class="button-rental_try"
+                    >
+                      Try now!
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -277,10 +283,7 @@
                 You can check in any time from 30 hours before your flight's
                 departure. Please select how you would like to check in.
               </p>
-              <button
-                onclick="location.href='login.html';"
-                class="check-in-button"
-              >
+              <button type="button" class="check-in-button">
                 Sign in account
                 <svg class="check-in-button-icon">
                   <use
@@ -288,10 +291,7 @@
                   ></use>
                 </svg>
               </button>
-              <button
-                onclick="location.href='booking.html';"
-                class="check-in-button"
-              >
+              <button type="button" class="check-in-button">
                 Booking details
                 <svg class="check-in-button-icon">
                   <use
@@ -448,4 +448,5 @@
       </ul>
     </footer>
   </body>
+  <script src="./index.js"></script>
 </html>
